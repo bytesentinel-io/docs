@@ -1,0 +1,10 @@
+{
+    "index": {
+        "title": "Home",
+        "type": "page"
+    },
+    "dynami": {
+        "title": "Dynami",
+        "type": "page"
+    }
+ }

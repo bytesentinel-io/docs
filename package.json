@@ -1,0 +1,15 @@
+{
+  "name": "bytesentinel-docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/bytesentinel-io/docs.git",
+  "author": "Björn Benouarets <70456959+bbenouarets@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^13.2.4",
+    "nextra": "^2.2.19",
+    "nextra-theme-docs": "^2.2.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
