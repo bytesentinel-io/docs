@@ -1,6 +1,9 @@
 {
   "name": "bytesentinel-docs",
   "version": "1.0.0",
+  "scripts": {
+    "build": "next build"
+  },
   "main": "index.js",
   "repository": "https://github.com/bytesentinel-io/docs.git",
   "author": "Björn Benouarets <70456959+bbenouarets@users.noreply.github.com>",
