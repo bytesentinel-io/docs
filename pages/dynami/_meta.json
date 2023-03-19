@@ -4,5 +4,8 @@
     },
     "quick-start": {
         "title": "Quick Start"
+    },
+    "providers": {
+        "title": "Providers"
     }
 }
