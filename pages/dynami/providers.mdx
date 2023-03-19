@@ -1,0 +1,22 @@
+# Providers
+
+Currently, `dynami` only supports Hetzner as a DNS provider. More providers will be added in future updates.
+
+## Hetzner
+
+**Documentation of API:** [Hetzner DNS Public API](https://dns.hetzner.com/api-docs)
+
+### Configuration
+
+* `api_key`: Your Hetzner DNS API key
+* `zone`: Name of the DNS zone you want to manage (e.g. `bytesentinel.io`)
+
+## Google Cloud Platform
+
+**Documentation of API:** [Google Cloud Platform API](https://cloud.google.com/dns/docs/reference/v1)
+
+### Configuration
+
+* `credentials_file`: Your credentials file of service account
+* `project`: ID of your project
+* `zone`: Name of the DNS zone you want to manage
