@@ -1,0 +1,25 @@
+import { Callout } from 'nextra-theme-docs'
+
+# Google Cloud Platform
+
+<Callout type="warning" emoji="⚠️">
+    Integration could not be tested due to the missing resource. Errors may occur when using the provider.
+</Callout>
+
+**Documentation of API:** [Google Cloud Platform API](https://cloud.google.com/dns/docs/reference/v1)
+
+## Configuration
+
+* `credentials`: Path to your credentials file of service account
+* `project`: ID of your project
+* `zone`: Name of the DNS zone you want to manage
+
+## Example
+
+```python
+api_key = "YOUR_API_KEY"
+project = "YOUR_PROJECT"
+zone = "yourdomain.local"
+
+provider = GoogleCloud(api_key=api_key, project=project, zone=zone)
+```

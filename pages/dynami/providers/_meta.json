@@ -1,0 +1,8 @@
+{
+    "hetzner": {
+        "title": "Hetzner"
+    },
+    "gcp": {
+        "title": "Google Cloud Platform"
+    }
+}

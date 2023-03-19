@@ -1,11 +1,12 @@
 {
     "index": {
+        "title": "Introduction"
+    },
+    "-- Docs": {
+        "title": "Documentation",
+        "type": "separator"
+    },
+    "getting-started": {
         "title": "Getting Started"
-    },
-    "quick-start": {
-        "title": "Quick Start"
-    },
-    "providers": {
-        "title": "Providers"
     }
 }

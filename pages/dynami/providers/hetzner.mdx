@@ -1,0 +1,17 @@
+# Hetzner
+
+**Documentation of API:** [Hetzner DNS Public API](https://dns.hetzner.com/api-docs)
+
+## Configuration
+
+* `api_key`: Your Hetzner DNS API key
+* `zone`: Name of the DNS zone you want to manage (e.g. `bytesentinel.io`)
+
+## Example
+
+```python
+api_key = "YOUR_API_KEY"
+zone = "yourdomain.local"
+
+provider = Hetzner(api_key=api_key, zone=zone)
+```

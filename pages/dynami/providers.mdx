@@ -1,41 +1,9 @@
 # Providers
 
-Currently, `dynami` only supports Hetzner as a DNS provider. More providers will be added in future updates.
+Currently, `dynami` only supports Hetzner and GCP as a DNS provider. More providers will be added in future updates.
 
-## Hetzner
+## Available Providers
 
-**Documentation of API:** [Hetzner DNS Public API](https://dns.hetzner.com/api-docs)
-
-### Configuration
-
-* `api_key`: Your Hetzner DNS API key
-* `zone`: Name of the DNS zone you want to manage (e.g. `bytesentinel.io`)
-
-### Example
-
-```python
-api_key = "YOUR_API_KEY"
-zone = "yourdomain.local"
-
-provider = Hetzner(api_key=api_key, zone=zone)
-```
-
-## Google Cloud Platform
-
-**Documentation of API:** [Google Cloud Platform API](https://cloud.google.com/dns/docs/reference/v1)
-
-### Configuration
-
-* `credentials`: Path to your credentials file of service account
-* `project`: ID of your project
-* `zone`: Name of the DNS zone you want to manage
-
-### Example
-
-```python
-api_key = "YOUR_API_KEY"
-project = "YOUR_PROJECT"
-zone = "yourdomain.local"
-
-provider = GoogleCloud(api_key=api_key, project=project, zone=zone)
-```
+- [x] Hetzner
+- [x] Google Cloud Platform
+- [ ] GoDaddy
