@@ -1,8 +1,11 @@
+import Script from 'next/script'
+
 export default {
     logo: <span>ByteSentinel</span>,
     head: <>
-        <link rel="icon" type="image/x-icon" href="logo.svg" />
-        <meta name="msapplication-TileColor" content="#222222"></meta>
+        <link rel="icon" type="image/png" href="logo.png" />
+        <meta name="msapplication-TileColor" content="#FFFFFF"></meta>
+        <script src="default.js"></script>
     </>,
     project: {
         link: 'https://github.com/bytesentinel-io',
