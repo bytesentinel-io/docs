@@ -21,20 +21,56 @@ Python must be installed for the installation. `dynami` does not require a Pytho
 
 <Tabs items={["Windows", "Linux", "macOS"]}>
     <Tab>
-        ```shell
+        ```shell copy
         pip install dynami
         ```
     </Tab>
     <Tab>
-        ```shell
+        ```shell copy
         pip install dynami
         ```
     </Tab>
     <Tab>
-        ```shell
+        ```shell copy
         pip install --user dynami
         ```
     </Tab>
 </Tabs>
+
+### Configuration
+
+To configure `dynami` we create a new python file (e.g. `updater.py`) and write there e.g. the following code snippet:
+
+```python filename="updater.py" copy showLineNumbers
+from dynami.ext import Client
+# e.g. Hetzner
+from dynami.provider import Hetzner
+```
+
+### Cronjob
+
+With a cronjob, the created python script can be executed automatically at a specified time. On a Linux system, this can be created as follows:
+
+**Start cronjob processing with the following command:**
+
+```shell copy
+crontab -e
+```
+
+**Add the following line to the open document:**
+
+```shell copy
+*/2 * * * * python3 updater.py >/dev/null 2>&1
+```
+
+**If the document was opened with** `nano`**, then simply with** `ctrl` **+** `x` **crontab can be saved.**
+
+### Test
+
+To ensure that the `updater.py` works completely, the script must be executed once manually.
+
+```shell copy
+python3 updater.py
+```
 
 </Steps>
