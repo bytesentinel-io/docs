@@ -1,4 +1,8 @@
 {
+    "-- header": {
+        "title": "Dynami",
+        "type": "separator"
+    },
     "index": {
         "title": "Introduction"
     },
