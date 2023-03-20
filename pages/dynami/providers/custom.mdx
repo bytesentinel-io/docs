@@ -5,11 +5,25 @@ description: Guide to create own providers for your DNS service
 
 ---
 
+import Link from 'next/link'
+
 # Custom Provider
 
 `dynami` is very modular and expandable. Thus, own providers can be integrated and used quickly.
 
-## Prerequisites
+## Initalization
+
+For the provider to be used properly by the base, the following variables must be initialized:
+
+* `self.record_type`: extension to <Link href="/dynami/extensions/enumy" className="text-primary">enumy</Link> initialize an enumeration for record type → `Enumy`
+* `self.zone_id`: The ID of the zone where the record is located
+
+When initializing the provider, the following parameters must also be passed to the class:
+
+* `api_key`/`credentials`: Access data to the provider's API endpoints or path to file → `string`
+* `zone`: Zone as name → `string`
+
+## Methods
 
 In order for `dynami` to use the custom provider, some standardized methods must be present in the provider.
 
@@ -35,8 +49,12 @@ def create_record(self, value: str, type: str, record: str) -> dict:
 #### Parameters
 
 * `value`: Contains the IP address or the content of the record - e.g. `82.45.123.56`
-* `type`: Specifies the type of the record - e.g. `A`
+* `type`: Specifies the type of the record - e.g. `A`/`AAAA`
 * `record`: Specifies which record should be created/updated - e.g. `home`
+
+#### Returns
+
+* **Type**: `dict`
 
 ### `update_record`
 
