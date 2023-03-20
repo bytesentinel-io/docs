@@ -8,5 +8,8 @@
     },
     "getting-started": {
         "title": "Getting Started"
+    },
+    "cli": {
+        "title": "CLI"
     }
 }

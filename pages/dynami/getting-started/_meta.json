@@ -1,5 +1,8 @@
 {
     "index": {
-        "title": "Quick Start"
+        "title": "Installation"
+    },
+    "usage": {
+        "title": "Usage"
     }
 }
