@@ -4,5 +4,8 @@
     },
     "gcp": {
         "title": "Google Cloud Platform"
+    },
+    "custom": {
+        "title": "Custom"
     }
 }

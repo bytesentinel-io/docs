@@ -1,0 +1,44 @@
+---
+
+title: Custom Provider
+description: Guide to create own providers for your DNS service
+
+---
+
+# Custom Provider
+
+`dynami` is very modular and expandable. Thus, own providers can be integrated and used quickly.
+
+## Prerequisites
+
+In order for `dynami` to use the custom provider, some standardized methods must be present in the provider.
+
+### `create_record`
+
+The `create_record` method creates the record in the specified zone when called.
+
+```python
+def create_record(self, value: str, type: str, record: str) -> dict:
+    self.record_type.set(type)
+    url = "https://dns.hetzner.com/api/v1/records"
+    data = json.dumps({
+        "value": value,
+        "ttl": 86400,
+        "type": str(self.record_type),
+        "name": record,
+        "zone_id": self.zone_id
+    })
+    result = requests.post(url, headers=self.headers, data=data)
+    return result
+```
+
+#### Parameters
+
+* `value`: Contains the IP address or the content of the record - e.g. `82.45.123.56`
+* `type`: Specifies the type of the record - e.g. `A`
+* `record`: Specifies which record should be created/updated - e.g. `home`
+
+### `update_record`
+
+### `delete_record`
+
