@@ -1,8 +1,4 @@
 {
-    "-- header": {
-        "title": "Dynami",
-        "type": "separator"
-    },
     "index": {
         "title": "Introduction"
     },
@@ -12,15 +8,18 @@
     "download": {
         "title": "Download"
     },
-    "-- Docs": {
+    "-- docs": {
         "title": "Documentation",
         "type": "separator"
     },
     "providers": {
         "title": "Providers"
     },
-    "-- Extensions": {
+    "-- ext": {
         "title": "Extensions",
         "type": "separator"
+    },
+    "extensions": {
+        "title": "Extensions"
     }
 }
