@@ -27,7 +27,8 @@ export default {
     //     </a>,
     // },
     sidebar: {
-        defaultMenuCollapseLevel: Number.POSITIVE_INFINITY,
+        defaultMenuCollapseLevel: 1,
+        toggleButton: true,
     },
     useNextSeoProps() {
         return {

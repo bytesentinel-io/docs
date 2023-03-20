@@ -19,10 +19,6 @@
     "providers": {
         "title": "Providers"
     },
-    "-- ext": {
-        "title": "Extensions",
-        "type": "separator"
-    },
     "extensions": {
         "title": "Extensions"
     }
