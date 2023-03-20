@@ -26,6 +26,9 @@ export default {
     //         🎉 Nextra 2.0 is released. Read more →
     //     </a>,
     // },
+    sidebar: {
+        defaultMenuCollapseLevel: Number.POSITIVE_INFINITY,
+    },
     useNextSeoProps() {
         return {
           titleTemplate: '%s – ByteSentinel.io'

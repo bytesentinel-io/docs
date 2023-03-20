@@ -2,14 +2,14 @@
     "index": {
         "title": "Introduction"
     },
+    "start": {
+        "title": "Quick Start"
+    },
+    "download": {
+        "title": "Download"
+    },
     "-- Docs": {
         "title": "Documentation",
         "type": "separator"
-    },
-    "getting-started": {
-        "title": "Getting Started"
-    },
-    "cli": {
-        "title": "CLI"
     }
 }
