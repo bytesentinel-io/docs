@@ -15,5 +15,12 @@
     "-- Docs": {
         "title": "Documentation",
         "type": "separator"
+    },
+    "providers": {
+        "title": "Providers"
+    },
+    "-- Extensions": {
+        "title": "Extensions",
+        "type": "separator"
     }
 }
