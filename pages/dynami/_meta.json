@@ -1,4 +1,7 @@
 {
+    "test": {
+        "title": "Test"
+    },
     "-- header": {
         "title": "Dynami",
         "type": "separator"
