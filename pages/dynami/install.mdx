@@ -1,11 +1,20 @@
-import { Card, Cards } from 'nextra-theme-docs'
+---
+
+title: Installation
+description: Installation guide of dynami
+
+---
+
+import { Card, Cards, Tab, Tabs, Steps } from 'nextra-theme-docs'
 import Link from 'next/link'
 import Image from 'next/image'
 import { MdTerminal } from "react-icons/md";
 
-# Download
+# Installation
 
-All downloads can be downloaded free of charge.
+With this guide you will be able to install `dynami` quickly and easily. We have two different types of `dynami` for you to choose from: 
+* CLI (Script/ZIP)
+* Manual
 
 <Cards>
     <Card icon={
@@ -22,28 +31,29 @@ All downloads can be downloaded free of charge.
 
 <br />
 
-<Image src="/images/github_repo.webp" alt="dynami Cover with Logo and Text" width={1000} height={1000} className="rounded-xl" priority />
-
-## Python Package
-
-### PyPI
-
-```shell copy
-pip install dynami
-```
-
-## CLI
-
-### GitHub
-
-* <Link href="https://github.com/bytesentinel-io/dynami" className="underline">Download from GitHub</Link>
-
-### Script
-
-```shell copy
-curl -sSL https://download.bytesentinel.io/dynami/cli | bash
-```
-
-<br />
-
 <Image src="/images/cli_term_install.webp" alt="dynami Cover with Logo and Text" width={1000} height={1000} className="rounded-xl" priority />
+
+## Easy installation
+
+`dynami` is available as a Python package on PyPI.org and can be installed with the following command:
+
+```shell copy
+python3 -m pip install dynami
+python3 -m dynami ensurepath
+```
+
+*Depending on the OS, the installation may require additional parameters.*
+
+## Manual installation
+
+For system administrators and the use in companies we recommend the manual installation way.
+
+<Steps>
+
+### Install pip package
+
+```shell copy
+python3 -m pip install dynami
+```
+
+</Steps>
