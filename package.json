@@ -9,12 +9,15 @@
   "author": "Björn Benouarets <70456959+bbenouarets@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
+    "cobe": "^0.6.3",
+    "mermaid": "^10.0.2",
     "next": "^13.2.4",
     "nextra": "^2.2.19",
     "nextra-theme-docs": "^2.2.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0"
+    "react-icons": "^4.8.0",
+    "react-spring": "^9.7.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
