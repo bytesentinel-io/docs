@@ -97,7 +97,7 @@ export default {
     },
     footer: {
         text: <span>
-            {new Date().getFullYear()} © <a href="https://bytesentinel.io" target="_blank">ByteSentinel</a>.
+            {new Date().getFullYear()} © <a href="https://bytesentinel.io" target="_blank">ByteSentinel</a>. All rights reserved.
         </span>,
     },
     navigation: {
