@@ -3,7 +3,7 @@ import { useConfig } from "nextra-theme-docs"
 
 export default {
     logo: <span>
-        <svg width="100%" height="100%" viewBox="0 0 96 24">
+        <svg width="80%" height="70%" viewBox="0 0 100 24">
             <g>
                 <path d="M12.17,9.726L15.463,8.81" stroke="currentColor" strokeWidth="0.29" />
                 <path d="M11.671,7.658L11.659,9.445" stroke="currentColor" strokeWidth="0.29" />
