@@ -46,11 +46,17 @@ export default {
                 <path fill="currentColor" d="M82.442,14.34L87.483,14.34L87.483,14.7L82.082,14.7L82.082,9.3L82.442,9.3L82.442,14.34Z"/>
             </g>
         </svg>
-
     </span>,
     head: <>
-        <link rel="icon" type="image/png" href="logo.png" />
-        <meta name="msapplication-TileColor" content="#FFFFFF"></meta>
+        <link rel="icon" href="icons/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="icons/favicon.ico" type="image/icon" />
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+        <link rel="manifest" href="icons/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
     </>,
     project: {
         link: 'https://github.com/bytesentinel-io',
@@ -65,12 +71,12 @@ export default {
     feedback: {
         content: null
     },
-    // banner: {
-    //     key: '2.0-release',
-    //     text: <a href="https://nextra.site" target="_blank">
-    //         🎉 Nextra 2.0 is released. Read more →
-    //     </a>,
-    // },
+    banner: {
+        key: '1.0.3-release',
+        text: <a href="https://github.com/bytesentinel-io/dynami" target="_blank">
+            🎉 Dynami 1.0.3 is released. Read more →
+        </a>,
+    },
     sidebar: {
         defaultMenuCollapseLevel: 1,
         toggleButton: true,
