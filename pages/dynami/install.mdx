@@ -41,7 +41,15 @@ The installation is done via the Python integrated tool `pip`:
 
 ```shell copy
 python3 -m pip install dynami
-python3 -m dynami ensurepath
+```
+
+Add python bin folder to your path:
+
+```bash filename=".zshrc" copy showLineNumbers
+# Linux
+export PATH=”$PATH:/usr/local/bin/python”
+# macOS
+export PATH="$HOME/Library/Python/3.11/bin:$PATH"
 ```
 
 There is also an installation script that automatically handles the installation of all necessary dependencies:

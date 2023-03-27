@@ -12,6 +12,9 @@
     "install": {
         "title": "Installation"
     },
+    "cli": {
+        "title": "Command Line Interface"
+    },
     "-- docs": {
         "title": "Documentation",
         "type": "separator"

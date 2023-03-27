@@ -72,9 +72,9 @@ export default {
         content: null
     },
     banner: {
-        key: '1.0.3-release',
+        key: '1.0.5-release',
         text: <a href="https://github.com/bytesentinel-io/dynami" target="_blank">
-            🎉 Dynami 1.0.3 is released. Read more →
+            🎉 Dynami 1.0.5 is released. Read more →
         </a>,
     },
     sidebar: {
