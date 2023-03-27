@@ -37,25 +37,29 @@ With this guide you will be able to install `dynami` quickly and easily. We have
 
 `dynami` is available as a Python package on PyPI.org and can be installed with the following command:
 
+To download and use `dynami` via `pip`, python must be installed first:
+
+```shell copy
+# Linux
+sudo apt-get install python3 python3-pip python3-venv python3-dev -y
+
+# macOS
+brew install python@3.11
+```
+
 The installation is done via the Python integrated tool `pip`:
 
 ```shell copy
 python3 -m pip install dynami
 ```
 
-Add python bin folder to your path:
+For `dynami` to be called directly as such, the Python binary must be added as PATH:
 
 ```bash filename=".zshrc" copy showLineNumbers
 # Linux
 export PATH=”$PATH:/usr/local/bin/python”
 # macOS
 export PATH="$HOME/Library/Python/3.11/bin:$PATH"
-```
-
-There is also an installation script that automatically handles the installation of all necessary dependencies:
-
-```shell copy
-curl -sSL https://docs.bytesentinel.io/download/linux.sh | bash
 ```
 
 *Depending on the OS, the installation may require additional parameters.*
